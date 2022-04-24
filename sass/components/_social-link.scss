@@ -1,0 +1,33 @@
+.social-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #757575;
+    transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    fill: #afb1b8;
+
+    &:hover,
+    &:focus {
+        background-color: #2196f3;
+        fill: #ffffff;
+    }
+}
+.footer-social-link {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms, fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    &:hover,
+    &:focus {
+        background-color: #2196f3;
+        fill: #ffffff;
+    
+    }
+}

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title lang="en">WebStudio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-container">
+          <a href="https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1" target="_blank" rel="noopener noreferrer"
+            class="logo link">Web<span class="logo-black">Studio</span></a>
+          <ul class="list menu-list">
+            <li class="menu-item">
+              <a class="menu link" href="./index.html">Студия</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu link current" href="./portfolio.html" rel="noopener noreferrer">Портфолио</a>
+            </li>
+            <li class="menu-item">
+              <a class="menu link" href="./contacts.html" rel="noopener noreferrer">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-conect list">
+          <li class="header-mailto">
+            <a class="header-contact link" href="mailto:info@example.com">
+              <svg class="header-icon mailto" width="16px" height="12px">
+                <use href="./img/icons.svg#icon-envelope"></use>
+              </svg>info@devstudio.com</a>
+        
+          </li>
+          <li class="header-tel">
+            <a class="header-contact link" href="tel:++380991111111"><svg class="header-icon header-mailto" width="10px"
+                height="16px">
+                <use href="./img/icons.svg#icon-smartphone"></use>
+              </svg>+38 099 111 11 11</a>
+        
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="portfolio">
+        <div class="container">
+        <div class="portfolio-btn">
+        <ul class="list portfolio-list">
+          <li class="filtered">
+            <button type="button" class="filter link">Все</button>
+          </li>
+          <li class="filtered">
+            <button type="button" class="filter link">Веб-сайты</button>
+          </li>
+          <li class="filtered">
+            <button type="button" class="filter link">Приложения</button>
+          </li>
+          <li class="filtered">
+            <button type="button" class="filter link">Дизайн</button>
+          </li>
+          <li class="filtered">
+            <button type="button" class="filter link">Маркетинг</button>
+          </li>
+        </ul>
+        </div>
+        <div class="container portfolio-container">
+        <ul class="portfolio-list list">
+          <li class="project">
+            <div class="project-img-wrap">
+            <img src="./img/project(1)(1).jpg" alt="Ноутбук с включенным веб-сайтом" width="370" height="294" />
+            <p class="project-img-text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить
+            исчерпывающие сведения о компании или частном лице.</p>
+            </div>
+            <div class="img-description">
+            <h3 class="proj-name">Технокряк</h3>
+            <p class="proj-text">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="project">
+            <img src="./img/project(2)(1).jpg" alt="Постер New Orlean vs Golden Star" width="370" height="294" />
+            <div class="img-description">
+            <h3 class="proj-name" lang="eu">
+              Постер New Orlean vs Golden Star
+            </h3>
+            <p class="proj-text">Дизайн</p>
+            </div>
+          </li>
+          <li class="project">
+            <img src="./img/project(3)(1).jpg" alt="Логотип ресторана Seafood" width="370" height="294" />
+            <div class="img-description">
+            <h3 class="proj-name" lang="eu">Ресторан Seafood</h3>
+            <p class="proj-text">Приложение</p>
+            </div>
+          </li>
+          <li class="project">
+            <img src="./img/project(4)(1).jpg" alt="Безпроводные наушники" width="370" height="294" />
+            <div class="img-description">
+            <h3 class="proj-name" lang="eu">Проект Prime</h3>
+            <p class="proj-text">Маркетинг</p>
+            </div>
+          </li>
+          <li class="project">
+            <img src="./img/project(5)(1).jpg" alt="Две коробки с надписями" width="370" height="294" />
+            <div class="img-description">
+            <h3 class="proj-name" lang="eu">Проект Boxes</h3>
+            <p class="proj-text">Приложение</p>
+            </div>
+          </li>
+          <li class="project">
+            <img src="./img/project(6)(1).jpg" alt="Макбук на котором включенный проект" width="370" height="294" />
+            <div class="img-description">
+            <h3 class="proj-name" lang="eu">Inspiration has no Borders</h3>
+            <p class="proj-text">Веб-сайт</p>
+            </div>
+          </li>
+          <li class="project">
+            <img src="./img/project(7)(1).jpg" alt="Открытая книга" width="370" height="294" />
+            <div class="img-description">
+            <h3 class="proj-name" lang="eu">Издание Limited Edition</h3>
+            <p class="proj-text">Дизайн</p>
+            </div>
+          </li>
+          <li class="project">
+            <img src="./img/project(8)(1).jpg" alt="Брелок с надписью" width="370" height="294" />
+            <div class="img-description">
+            <h3 class="proj-name" lang="eu">Проект LAB</h3>
+            <p class="proj-text">Маркетинг</p>
+            </div>
+          </li>
+          <li class="project">
+            <img src="./img/project(9)(1).jpg" alt="Человек работает за ноутбуком" width="370" height="294" />
+            <div class="img-description">
+            <h3 class="proj-name" lang="eu">Growing Business</h3>
+            <p class="proj-text">Приложение</p>
+            </div>
+          </li>
+        </ul>
+        </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <address class="footer-contact">
+          <a href="https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1" target="_blank" rel="noopener noreferrer"
+            class="footer-logo link">Web<span class="logo-white">Studio</span></a>
+          <div class="map">
+            <a href="https://goo.gl/maps/b4mxkCM2vyuj6qED6" target="_blank" class="address link">г. Киев, пр-т Леси
+              Украинки, 26</a>
+          </div>
+          <div class="mail">
+            <a href="mailto:info@example.com" class="footer-contact link">info@example.com</a>
+          </div>
+          <div class="tel">
+            <a href="tel:++380991111111" class="footer-contact link">+38 099 111 11 11</a>
+          </div>
+        </address>
+        <div class="footer-social">
+          <p class="footer-socials">присоединяйтесь</p>
+          <ul class="master-social list footer-social-list">
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon" width="20px" height="20px">
+                  <use href="./img/icons.svg#icon-instagram2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon" width="20px" height="20px">
+                  <use href="./img/icons.svg#icon-twitter1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon" width="20px" height="20px">
+                  <use href="./img/icons.svg#icon-facebook1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social-item">
+              <a href="" class="footer-social-link">
+                <svg class="footer-social-icon" width="20px" height="20px">
+                  <use href="./img/icons.svg#icon-linkedin1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_subscribe">
+          <label class="footer-label">
+            <b class="footer-socials">Подпишитесь на рассылку</b>
+            <input type="email" name="user_email" placeholder="E-mail" lang="en" class="label_input">
+          </label>
+          <button type="button" class="footer_subscribe_btn">Подписаться
+            <svg class="footer_button" width="px" height=px>
+              <use href="./img/icons.svg#icon-icon_send"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
