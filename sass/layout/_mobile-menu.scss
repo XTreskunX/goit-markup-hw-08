@@ -7,6 +7,16 @@
     height: 100vh;
     overflow: auto;
 }
+.mobile-menu {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
 .mobile-menu__close-btn {
     position: absolute;
     top: 10px;
@@ -15,6 +25,10 @@
     line-height: 0;
     border: none;
     padding: 0;
+    &:hover,
+    &:focus {
+        fill: var(--accent-color);
+    }
 }
 .mobile-menu__container {
     position: relative;
@@ -23,6 +37,13 @@
 }
 .mobile-social-menu {
     display: flex;
+    & li:not( :first-child) {
+        border-left: 1px solid rgba(33, 33, 33, 0.2);
+    }
+    & li:not( :first-child) {
+        padding-left: 10px;
+        margin-left: 10px;
+    }
 }
 .mobile-menu-item {
     font-weight: 500;
@@ -74,9 +95,4 @@
     line-height: 1.22;
     letter-spacing: 0.02em;
     color: #2196F3;
-    padding-right: 10px;
-    margin-right: 10px;
-    &:not(last-child) {
-        border-right: 1px solid rgba(33, 33, 33, 0.2);
-    }
 }
