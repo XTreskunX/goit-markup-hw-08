@@ -18,8 +18,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 528px;
-    height: 580px;
+    width: 450px;
+    height: 610px;
     background-color: rgb(255, 255, 255);
     padding: 40px;
 }
@@ -47,8 +47,9 @@
 }
 
 .modal_form_message {
+    display: block;
     font-size: 20px;
-    line-height: 23px;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
@@ -130,7 +131,8 @@
 .contact-form-checkbox-label {
     display: flex;
     align-items: center;
-    font-size: 14px;
+    font-size: 12px;
+    line-height: 1.16;
     margin-top: 20px;
     margin-left: 15px;
     &::before {
@@ -176,4 +178,15 @@
 
 .checkbox_link {
     color: #2196f3;
+}
+// 1200px +
+@media screen and (min-width: 1200px) {
+    .modal {
+        width: 530px;
+        height: 580px;
+    }
+    .contact-form-checkbox-label {
+        font-size: 14px;
+        line-height: 1.7;
+    }
 }
