@@ -17,14 +17,14 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-    <header class="header">
+    <header class="header container">
       <div class="container header-container">
         <nav class="header-container">
           <a href="https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1" target="_blank" rel="noopener noreferrer"
             class="logo link">Web<span class="logo-black">Studio</span></a>
           <ul class="list menu-list">
             <li class="menu-item">
-              <a class="menu link" href="./index.html">Студия</a>
+              <a class="menu link " href="./index.html">Студия</a>
             </li>
             <li class="menu-item">
               <a class="menu link current" href="./portfolio.html" rel="noopener noreferrer">Портфолио</a>
@@ -40,23 +40,62 @@
               <svg class="header-icon mailto" width="16px" height="12px">
                 <use href="./img/icons.svg#icon-envelope"></use>
               </svg>info@devstudio.com</a>
-        
+    
           </li>
           <li class="header-tel">
-            <a class="header-contact link" href="tel:++380991111111"><svg class="header-icon header-mailto" width="10px"
+            <a class="header-contact link" href="tel:+380991111111"><svg class="header-icon header-mailto" width="10px"
                 height="16px">
                 <use href="./img/icons.svg#icon-smartphone"></use>
               </svg>+38 099 111 11 11</a>
-        
+    
           </li>
         </ul>
+        <button type="button" class="mobile-menu-btn" data-menu-open>
+          <svg class="mobile-menu-btn__icon" width="40px" height="40px">
+            <use href="./img/icons.svg#burger-header-menu"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40px" height="40px">
+              <use href="./img/icons.svg#icon-close_black"></use>
+            </svg>
+          </button>
+          <ul class="list mobile-menu__nav">
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-li link current" href="./index.html">Студия</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-li link" href="./portfolio.html" rel="noopener noreferrer">Портфолио</a>
+            </li>
+            <li class="mobile-menu-item">
+              <a class="mobile-menu-li link" href="./contacts.html" rel="noopener noreferrer">Контакты</a>
+            </li>
+          </ul>
+          <ul class="list mobile-menu-conect">
+            <li class="mobile-menu-conect-tel">
+              <a href="tell:+38 096 111 11 11" class="link mobile-menu-conect_tel">+38 096 111 11 11</a>
+            </li>
+            <li class="mobile-menu-conect-mailto">
+              <a href="mailto:info@devstudio.com" class="link mobile-menu-conect_mailto">info@devstudio.com</a>
+            </li>
+          </ul>
+          <ul class="list mobile-social-menu">
+            <li><a href="https://www.instagram.com/" target="_blank" class="link mobile-social-menu-item">Instagram</a></li>
+            <li><a href="https://twitter.com/?lang=uk" target="_blank" class="link mobile-social-menu-item">Twitter</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" class="link mobile-social-menu-item">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" class="link mobile-social-menu-item">LinkedIn</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
       <section class="portfolio">
         <div class="container">
         <div class="portfolio-btn">
-        <ul class="list portfolio-list">
+        <ul class="list portfolio-filtered">
           <li class="filtered">
             <button type="button" class="filter link">Все</button>
           </li>
@@ -152,7 +191,7 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <address class="footer-contact">
+        <address class="footer-contacts">
           <a href="https://uk.wikipedia.org/wiki/%D0%92%D0%B5%D0%B1" target="_blank" rel="noopener noreferrer"
             class="footer-logo link">Web<span class="logo-white">Studio</span></a>
           <div class="map">
@@ -199,17 +238,17 @@
             </li>
           </ul>
         </div>
-        <div class="footer_subscribe">
+        <form class="footer_subscribe">
           <label class="footer-label">
             <b class="footer-socials">Подпишитесь на рассылку</b>
-            <input type="email" name="user_email" placeholder="E-mail" lang="en" class="label_input">
+            <input type="email" name="user_email" placeholder="E-mail" lang="en" class="label_input" required>
           </label>
-          <button type="button" class="footer_subscribe_btn">Подписаться
-            <svg class="footer_button" width="px" height=px>
+          <button type="submit" class="footer_subscribe_btn">Подписаться
+            <svg class="footer_button">
               <use href="./img/icons.svg#icon-icon_send"></use>
             </svg>
           </button>
-        </div>
+        </form>
       </div>
     </footer>
   </body>

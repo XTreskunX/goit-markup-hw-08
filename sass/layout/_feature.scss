@@ -72,6 +72,7 @@
 }
 
 .feature-containers {
+
     max-width: 270px;
 
 }
@@ -81,5 +82,8 @@
     background: #f5f4fa;
     margin-bottom: 30px;
     min-width: 0;
+}
+.feature-container {
+    min-width: 1600px;
 }
 }
