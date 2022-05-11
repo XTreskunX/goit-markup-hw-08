@@ -79,6 +79,7 @@
     border-right: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
     padding: 20px 24px;
+    flex-grow: 1;
 }
 
 .portfolio {
@@ -88,9 +89,6 @@
 .portfolio-container {
     margin-top: 30px;
 }
-
-
-
 .project-img-wrap {
     position: relative;
     overflow: hidden;
@@ -110,6 +108,8 @@
     }
     .project {
         flex-basis: calc((100% - 2 * 30px) / 2);
+        display: flex;
+        flex-direction: column;
     }
 }
 // 1200px +
@@ -122,9 +122,6 @@
         text-align: center;
         justify-content: center;
         height: 38px;
-    }
-    .portfolio {
-        min-width: 1600px;
     }
     .project {
         flex-basis: calc((100% - 3 * 30px) / 3);
