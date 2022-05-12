@@ -1,7 +1,8 @@
 .hero {
     padding:118px 0 ;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../img/hero/mobile-bi.jpg);
+        url(../img/hero/mb-bi.jpg);
+    /* background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/mb-hero-webp.webp); */
     background-color: rgba(47, 48, 58, 1);
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,7 +10,16 @@
     max-width: 1600px;
     margin: 0 auto;
 }
-
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .hero {
+        background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/mb-hero@2x.jpg);
+    }
+    /* .hero {
+       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/mb-hero-webp@2x.webp);
+        } */
+}
 .hero-text {
     font-weight: 900;
     font-size: 26px;
@@ -26,8 +36,19 @@
 @media screen and (min-width: 768px) {
     .hero {
         background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-            url(../img/hero/tablet-bi.jpg);
+            url(../img/hero/tb-bi.jpg);
     }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/tb-hero@2x.jpg);
+            }
+    
+            /* .hero {
+           background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/tb-hero-webp@2x.webp);
+            } */
+        }
     
 }
 // 1200px +
@@ -38,6 +59,17 @@
         background-color: rgba(47, 48, 58, 1);
         padding-top: 200px;
     }
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            .hero {
+                background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/ds-hero@2x.jpg);
+            }
+    
+            /* .hero {
+           background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero/ds-hero-webp@2x.webp);
+            } */
+        }
     
     .hero-text {
         font-weight: 900;
